@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="title">
+            <img src="logo.png" class="logo">
+            <h1>Weather App</h1>
+        </div>
+        <div class="theme">
+            <div class="theme-change">
+                <i class="fa-solid fa-sun"></i>
+            </div>
+
+            <h3 class="theme-text">Light</h3>
+        </div>
+
+    </header>
+    <section class="search-section">
+        <div class="search-box">
+            <input
+            type="text"
+            class="search"
+            placeholder="Search City">
+            <button class="submit">
+                Search
+            </button>
+        </div>
+        <div class="suggestion"></div>
+    </section>
+    <section class="unit-section">
+        <button class="temp-unit">
+            °C / °F
+        </button>
+        <button class="speed-unit">
+            km/h / mph
+        </button>
+
+    </section>
+    <section class="location-section">
+        <button class="location-btn">
+            <i class="fa-solid fa-location-dot"></i>
+            Use My Location
+        </button>
+    </section>
+    <div class="error-message"></div>
+    <section class="current-weather">
+    </section>
+    <section class="details-grid">
+        <div class="detail-card humidity-card"> </div>
+        <div class="detail-card wind-card"></div>
+        <div class="detail-card direction-card"></div>
+        <div class="detail-card pressure-card"></div>
+        <div class="detail-card visibility-card"></div>
+    </section>
+    <section class="hourly-section">
+        <h2>Hourly Forecast</h2>
+        <div class="hourly-container"></div>
+    </section>
+    <section class="daily-section">
+        <h2>7-Day Forecast</h2>
+        <div class="daily-container"></div>
+    </section>
+    <section class="save-section">
+        <button class="save-city">
+            <i class="fa-solid fa-heart"></i>
+            Save Current City
+        </button>
+    </section>
+    <section class="saved-section">
+        <h2>Saved Locations</h2>
+        <div class="saved-cities">
+        </div>
+    </section>
+    <div class="loader">
+        <i class="fa-solid fa-spinner"></i>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
