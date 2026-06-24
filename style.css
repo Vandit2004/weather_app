@@ -203,7 +203,6 @@ body.dark .current-weather{
 }
 
 .detail-card{
-    display:none;
     padding:25px;
     border-radius:20px;
     text-align:center;
